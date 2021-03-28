@@ -167,8 +167,7 @@ def if_won():
         messagebox.showinfo("Tic Tac Toe", "Good Job!!! O Won!!!")
         disable_all_buttons()
 
-
-# Check if tie
+    # Check if tie
     if count == 9 and winner == False:
         messagebox.showinfo("Tic Tac Toe", "Its A Tie!\nNo One Wins!")
         disable_all_buttons()
@@ -200,7 +199,7 @@ def b_click(btn):
 
 # reset the Game and start over!
 def reset():
-    global btn1, btn2, btn3, btn4,btn5, btn6, btn7, btn8, btn9
+    global btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9
     global clicked, count
     clicked = True
     count = 0
@@ -248,7 +247,6 @@ root.config(menu=my_menu)
 options_menu = Menu(my_menu, tearoff=False)
 my_menu.add_cascade(label="options", menu=options_menu)
 options_menu.add_command(label="Reset Game", command=reset)
-
 
 reset()
 
