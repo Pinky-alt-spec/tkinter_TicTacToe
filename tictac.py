@@ -150,7 +150,7 @@ def if_won():
         messagebox.showinfo("Tic Tac Toe", "Good Job!!! O Won!!!")
         disable_all_buttons()
 
-    # check to see if someone has won in each diagonal
+    # check to see if "O" has won in each diagonal
     elif btn1["text"] == "O" and btn5["text"] == "O" and btn9["text"] == "O":
         btn1.config(bg="#45bfad")
         btn5.config(bg="#45bfad")
